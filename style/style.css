@@ -1,2 +1,6 @@
+@import "global.css";
 @import "article.css";
 @import "content.css";
+@import "first-rule.css";
+@import "second-rule.css";
+@import "third-rule.css";

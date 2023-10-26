@@ -4,6 +4,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Курсовая работа - Methed Module-2</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style/style.css">
 </head>
 <body>
   <article class="article-page">
@@ -14,23 +20,32 @@
     </div>
 
     <section class="section-first-page">
-      <div class="content container">
-        <h2 class="content__title">Содержание:</h2>
-        <ul class="content__list">
-          
-          <li class="content__element">
-            <a class="content__element-link" href="#1">Отступ задается от предыдущего элемента к следующему</a>
-          </li>
+      <div class="content container-big">
+        <div class="content__box-content">
+          <h2 class="content__title">Содержание:</h2>
+          <ol class="content__list">
+  
+            <li class="content__element">
+              <a class="content__element-link" href="#1">Отступ задается от предыдущего элемента к следующему</a>
+            </li>
+  
+            <li class="content__element">
+              <a class="content__element-link" href="#2">Отступ задается последнему возможному элементу в DOM-дереве</a>
+            </li>
+  
+            <li class="content__element">
+              <a class="content__element-link" href="#3">Для последнего элемента группы отступ обнуляется</a>
+            </li>
+  
+          </ol>
+        </div>
+      </div>
+    </section>
 
-          <li class="content__element">
-            <a class="content__element-link" href="#2">Отступ задается последнему возможному элементу в DOM-дереве</a>
-          </li>
+    <section class="section-second-page">
+      <div class="first-rule container">
+        <h2 class="first-rule__title">Отступ задается от предыдущего элемента к следующему: от первого ко второму, сверху вниз, слева направо.</h2>
 
-          <li class="content__element">
-            <a class="content__element-link" href="#3">Для последнего элемента группы отступ обнуляется</a>
-          </li>
-
-        </ul>
       </div>
     </section>
   </article>
