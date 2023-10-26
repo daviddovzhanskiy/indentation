@@ -5,3 +5,22 @@
   font-weight: 900;
   line-height: 120%;
 }
+
+.first-rule__upper-box {
+  /* display: inline-block; */
+}
+
+.block {
+  display: inline-block;
+}
+.first-rule__left-img {
+  display: block;
+  max-width: 400px;
+  float: left;
+} 
+
+.first-rule__right-text {
+  max-width: 300px;
+  /* float: right; */
+  display: block; 
+}
