@@ -6,21 +6,65 @@
   line-height: 120%;
 }
 
-.first-rule__upper-box {
-  /* display: inline-block; */
-}
+/* Почему не работает даже с дивами */
+/* .first-rule__upper-box {
+  display: inline-block;
+} */
 
-.block {
+/* .first-rule__right-text-box {
   display: inline-block;
 }
+
 .first-rule__left-img {
   display: block;
-  max-width: 400px;
+  width: 560px;
+  height: 415px;
   float: left;
 } 
 
 .first-rule__right-text {
-  max-width: 300px;
-  /* float: right; */
-  display: block; 
+  max-width: 150px;
+  float: right;
+  margin-bottom: 30px;
+} 
+
+.cont {
+  display: inline-block;
+  vertical-align: top;
+} */
+
+/* .block {
+  display: inline-block;
+}
+
+.first-rule__right-text {
+  display: inline-block;
+  vertical-align: top;
+  max-width: 490px;
+}
+
+.first-rule__left-img {
+  display: inline-block;
+  vertical-align: top;
+  width: 560px;
+  height: 415px;
+  margin-right: 25px;
+} */
+
+.first-rule__box-upper {
+  display: flow-root;
+  margin-bottom: 30px;
+}
+
+.first-rule__left-img {
+  float: left;
+  width: 560px;
+  height: 415px;
+  margin-right: 25px;
+}
+
+.first-rule__right-text {
+  margin-bottom: 30px;
+  font-size: 20px;
+  line-height: 120%;
 }
