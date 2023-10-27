@@ -5,3 +5,22 @@
   font-weight: 900;
   line-height: 120%;
 }
+
+.second-rule__text {
+  font-size: 20px;
+  line-height: 120%;
+  margin-bottom: 30px;
+}
+
+.second-rule__text:last-child {
+  margin-bottom: 0;
+}
+
+.second-rule__img {
+  margin: 0 auto 30px;
+  width: 100%;
+}
+
+.second-rule__img_size_small {
+  /* width: 100%; */
+}
