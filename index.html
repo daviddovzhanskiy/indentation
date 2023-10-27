@@ -48,15 +48,15 @@
         
         <div class="first-rule__box-upper">
           <img class="first-rule__left-img" src="img/image-1.png" alt="Первая картинка">
-          <p class="first-rule__right-text"><strong class="first-rule__right-text_style_strong">ВАЖНО:</strong> <i class="first-rule__right-text_style_italic">margin</i>  всегда задают от предыдущего элемента к следующему.</p>
-          <p class="first-rule__right-text">Свойство <i class="first-rule__right-text_style_italic">margin</i> необходимо только для того, чтобы отодвинуть своего соседа справа или снизу, поэтому используется <i class="first-rule__right-text_style_italic">margin-right</i> и <i class="first-rule__right-text_style_italic">margin-bottom</i>.</p>
-          <p class="first-rule__right-text">(!) Свойства <i class="first-rule__right-text_style_italic">margin-left</i> и <i class="first-rule__right-text_style_italic">margin-top</i> используются крайне редко.</p>
-          <p class="first-rule__right-text">Для <i class="first-rule__right-text_style_italic">padding</i> верно обратное. Исключением является его применения в декоративных целях, например, для увеличения области ссылки.</p>
+          <p class="first-rule__right-text"><strong class="first-rule__right-text first-rule__right-text_style_strong">ВАЖНО:</strong> <i class="first-rule__right-text first-rule__right-text_style_italic">margin</i>  всегда задают от предыдущего элемента к следующему.</p>
+          <p class="first-rule__right-text">Свойство <i class="first-rule__right-text first-rule__right-text_style_italic">margin</i> необходимо только для того, чтобы отодвинуть своего соседа справа или снизу, поэтому используется <i class="first-rule__right-text first-rule__right-text_style_italic">margin-right</i> и <i class="first-rule__right-text first-rule__right-text_style_italic">margin-bottom</i>.</p>
+          <p class="first-rule__right-text">(!) Свойства <i class="first-rule__right-text first-rule__right-text_style_italic">margin-left</i> и <i class="first-rule__right-text first-rule__right-text_style_italic">margin-top</i> используются крайне редко.</p>
+          <p class="first-rule__right-text">Для <i class="first-rule__right-text first-rule__right-text_style_italic">padding</i> верно обратное. Исключением является его применения в декоративных целях, например, для увеличения области ссылки.</p>
         </div>
 
         <div class="first-rule__box-lower">
           <img class="first-rule__right-img" src="img/image-2.png" alt="Вторая картинка">
-          <p class="first-rule__left-text">Отступ внутри блока сверху или слева реализуется через <i class="first-rule__left-text_style_italic">padding-top</i> и <i>padding-left</i> родителя.</p>
+          <p class="first-rule__left-text">Отступ внутри блока сверху или слева реализуется через <i class="first-rule__left-text first-rule__left-text_style_italic">padding-top</i> и <i>padding-left</i> родителя.</p>
           <p class="first-rule__left-text">Отступы, как правило, делают в направлении от предыдущего элемента к следующему. Так элемент не будет толкать сам себя.</p>
           <p class="first-rule__left-text">Изначально элемент статичен, а его положение может меняться только под воздействием свойств других блоков или свойств родителя.</p>
         </div>
@@ -68,6 +68,22 @@
         <h2 class="second-rule__title">Отступ задается последнему возможному элементу в DOM-дереве</h2>
         <p class="second-rule__text">Вообще, margin задают исключительно между соседними элементами DOM-дерева. Для примера, посмотрите на этот список:</p>
         <img class="second-rule__img" src="img/image-3.png" alt="Третья картинка">
+        <img class="second-rule__img second-rule__img_size_small" src="img/image-4.png" alt="Четвертая картинка">
+
+        <p class="second-rule__text">Отступ делают за счёт соседних элементов, а не дочерних:</p>
+        <div class="second-rule__box-custom-img">
+          <img class="second-rule__img" src="img/image-5.png" alt="Пятая картинка">
+          <p class="second-rule__custom-text"><strong second-rule__custom-text second-rule__custom-text_style_strong>ВАЖНО:</strong> здесь .list-item — последний возможный элемент в котором мы задаём отступ, чтобы разделить списки.</p>
+        </div>
+
+        <p class="second-rule__text">Казалось бы, можно задать отступ параграфу &lt;p&gt;, либо обёртке &lt;article&gt; для достижения той же цели. Внешне останется все точно также, но так делать не рекомендуется.</p>
+        <p class="second-rule__text">Предыдущий пример был достаточно простым, но бывает вложенность значительно больше.</p>
+        <img class="second-rule__img second-rule__img_size_small" src="img/image-6.png" alt="Шестая картинка">
+
+        <p class="second-rule__text">В случае с заголовком, если ему необходим отступ сверху, последним элементом будет <i class="second-rule__text second-rule__text_style_italic">section.</i> Именно для него задается <i class="second-rule__text second-rule__text_style_italic">padding-top,</i> а не <i class="second-rule__text second-rule__text_style_italic">div</i> с классом <i class="second-rule__text second-rule__text_style_italic">container.</i> Свойства margin, которые стоят по умолчанию необходимо обнулить.</p>
+        <img class="second-rule__img second-rule__img_size_small" src="img/image-7.png" alt="Шестая картинка">
+        <p class="second-rule__text">Это необходимо для более простого поиска отступов в будущем — для вас или того, кто будет верстать после вас. Кроме того, возможны серьёзные проблемы при динамическом дублировании или выводе вёрстки с нестандартной структурой отступов.</p>
+
       </div>
     </section>
   </article>
