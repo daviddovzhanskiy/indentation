@@ -24,7 +24,6 @@
         <div class="content__box-content">
           <h2 class="content__title">Содержание:</h2>
           <ol class="content__list">
-  
             <li class="content__element">
               <a class="content__element-link" href="#1">Отступ задается от предыдущего элемента к следующему</a>
             </li>
@@ -36,7 +35,6 @@
             <li class="content__element">
               <a class="content__element-link" href="#3">Для последнего элемента группы отступ обнуляется</a>
             </li>
-  
           </ol>
         </div>
       </div>
@@ -81,9 +79,63 @@
         <img class="second-rule__img second-rule__img_size_small" src="img/image-6.png" alt="Шестая картинка">
 
         <p class="second-rule__text">В случае с заголовком, если ему необходим отступ сверху, последним элементом будет <i class="second-rule__text second-rule__text_style_italic">section.</i> Именно для него задается <i class="second-rule__text second-rule__text_style_italic">padding-top,</i> а не <i class="second-rule__text second-rule__text_style_italic">div</i> с классом <i class="second-rule__text second-rule__text_style_italic">container.</i> Свойства margin, которые стоят по умолчанию необходимо обнулить.</p>
-        <img class="second-rule__img second-rule__img_size_small" src="img/image-7.png" alt="Шестая картинка">
+        <img class="second-rule__img second-rule__img_size_small" src="img/image-7.png" alt="Седьмая картинка">
         <p class="second-rule__text">Это необходимо для более простого поиска отступов в будущем — для вас или того, кто будет верстать после вас. Кроме того, возможны серьёзные проблемы при динамическом дублировании или выводе вёрстки с нестандартной структурой отступов.</p>
+      </div>
+    </section>
 
+    <section class="section-fourth-page" id="3">
+      <div class="third-rule container">
+        <h2 class="third-rule__title">Для последнего элемента группы отступ всегда обнуляется</h2>
+        <p class="third-rule__text">Для наглядности возьмём наш предыдущий пример с рецептами</p>
+        <p class="third-rule__text">Между рецептами расстояние одинаковое. Можно заметить, что и до следующего блока расстояние такое же.</p>
+        <img class="third-rule__img third-rule__img_size_small" src="img/image-8.png" alt="Восьмая картинка">
+        
+        <p class="third-rule__text">В соответствии со вторым принципом: последний <i class="third-rule__text third-rule__text_style_italic">margin</i> обнуляется, а нижний отступ задаётся через <i class="third-rule__text third-rule__text_style_italic">padding</i> для <i class="third-rule__text third-rule__text_style_italic">section.</i> Я чаще всего задаю <i class="third-rule__text third-rule__text_style_italic">padding</i> для секции с обоих сторон, если расстояние между секциями 100px задаю секциям <i class="third-rule__text third-rule__text_style_italic">padding-top:50px</i> и <i class="third-rule__text third-rule__text_style_italic">padding-bottom:50px.</i></p>
+        <img class="third-rule__img third-rule__img_size_small" src="img/image-9.png" alt="Девятая картинка">
+        <img class="third-rule__img third-rule__img_margin_none" src="img/image-10.png" alt="Десятая картинка">
+        <img class="third-rule__img" src="img/image-11.png" alt="Одиннадцатая картинка">
+
+        <p class="third-rule__text">Для большего понимания рассмотрим другой пример, который часто встречается на практике:</p>
+        <img class="third-rule__img" src="img/image-12.png" alt="Двенадцатая картинка">
+        <img class="third-rule__img third-rule__img_size_small" src="img/image-13.png" alt="Тринадцатая картинка">
+
+        <p class="third-rule__text">Здесь нас интересует отступ между пунктами меню и списком с кнопкой поиска. Отступы между пунктами меню задаются так:</p>
+        <img class="third-rule__img third-rule__img_size_small" src="img/image-14.png" alt="Четырнадцатая картинка">
+
+        <p class="third-rule__text">Советую использовать псевдоклассы :last-child чаще других, например так:</p>
+        <img class="third-rule__img third-rule__img_size_small" src="img/image-15.png" alt="Пятнадцатая картинка">
+      </div>
+    </section>
+
+    <section class="section-fifth-page">
+      <div class="results container-big">
+        <div class="results__box-content">
+          <h2 class="results__title">Содержание:</h2>
+          <ul class="results__list">
+            <li class="results__element">
+              <p class="results__element-text">— отступ задается от предыдущего элемента к следующему</p>
+            </li>
+  
+            <li class="results__element">
+              <p class="results__element-text">— используем только margin-right и margin-bottom</p>
+            </li>
+  
+            <li class="results__element">
+              <p class="results__element-text">— внешние отступы задаются только между соседями</p>
+            </li>
+
+            <li class="results__element">
+              <p class="results__element-text">— внутренний отступ задаём самому верхнему элементу в дом дереве</p>
+            </li>
+
+            <li class="results__element">
+              <p class="results__element-text">— последнему элементу группы отступ всегда обнуляем</p>
+            </li>
+          </ul>
+          
+          <p class="results__text">Конечно бывают исключения. Ведь макеты бывают различной сложности. Иногда базовые принципы приходится нарушать в угоду дизайнерского решения или простоты вёрстки. Но для этого эти принципы необходимо хорошо знать.</p>
+        </div>
       </div>
     </section>
   </article>

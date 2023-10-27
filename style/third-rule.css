@@ -1,0 +1,35 @@
+.third-rule__title {
+  margin-bottom: 30px;
+
+  font-size: 36px;
+  font-weight: 900;
+  line-height: 120%;
+}
+
+.third-rule__text {
+  font-size: 20px;
+  line-height: 120%;
+  margin-bottom: 30px;
+}
+
+.third-rule__text:last-child {
+  margin-bottom: 0;
+}
+
+.third-rule__img {
+  display: block;
+  margin: 0 auto 30px;
+  width: 100%;
+}
+
+.third-rule__img:last-child {
+  margin-bottom: 0;
+}
+
+.third-rule__img_size_small {
+  width: initial;
+}
+
+.third-rule__img_margin_none {
+  margin-bottom: 0;
+}

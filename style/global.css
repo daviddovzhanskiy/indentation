@@ -25,6 +25,11 @@ fieldset {
   margin: 0;
 }
 
+ul, ol {
+  margin: 0;
+  padding: 0;
+}
+
 .container {
   max-width: 1140px;
   padding: 0 30px;
@@ -39,4 +44,9 @@ fieldset {
 
 section {
   padding: 25px 0;
+}
+
+section:last-child {
+  padding-top: 25px;
+  padding-bottom: 0;
 }
