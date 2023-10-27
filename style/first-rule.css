@@ -68,3 +68,20 @@
   font-size: 20px;
   line-height: 120%;
 }
+
+.first-rule__box-lower {
+  display: flow-root;
+}
+
+.first-rule__right-img {
+  float: right;
+  width: 560px;
+  height: 279px;
+  margin-left: 35px;
+}
+
+.first-rule__left-text {
+  margin-bottom: 30px;
+  font-size: 20px;
+  line-height: 120%;
+}
