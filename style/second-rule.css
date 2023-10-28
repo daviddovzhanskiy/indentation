@@ -7,9 +7,10 @@
 }
 
 .second-rule__text {
+  margin-bottom: 30px;
+
   font-size: 20px;
   line-height: 120%;
-  margin-bottom: 30px;
 }
 
 .second-rule__text:last-child {
@@ -28,13 +29,13 @@
 
 .second-rule__box-custom-img {
   position: relative;
+  margin-bottom: 30px;
 }
 
 .second-rule__box-custom-img::after {
     content: "";
     display: block;
     margin-top: -30px;
-    margin-bottom: 30px;
     width: 100%;
     height: 78px;
 
@@ -43,11 +44,13 @@
     border-right: 1px solid #000;
 }
 
+.second-rule__box-custom-text {
+  padding-left: 30px;
+}
 .second-rule__custom-text{
   position: absolute;
   bottom: 15px;
   width: 1050px;
-  padding-left: 30px;
   
   color: #5E5E5E;
   font-size: 20px;

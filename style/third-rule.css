@@ -7,9 +7,10 @@
 }
 
 .third-rule__text {
+  margin-bottom: 30px;
+
   font-size: 20px;
   line-height: 120%;
-  margin-bottom: 30px;
 }
 
 .third-rule__text:last-child {
