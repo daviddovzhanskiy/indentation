@@ -27,30 +27,27 @@
   width: initial;
 }
 
+.second-rule__img_margin_none {
+  margin: 0;
+}
+
 .second-rule__box-custom-img {
-  position: relative;
   margin-bottom: 30px;
 }
 
-.second-rule__box-custom-img::after {
-    content: "";
-    display: block;
-    margin-top: -30px;
-    width: 100%;
-    height: 78px;
-
-    border-bottom: 1px solid #000;
-    border-left: 1px solid #000;
-    border-right: 1px solid #000;
-}
-
 .second-rule__box-custom-text {
+  width: 100%;
+  height: 78px;
   padding-left: 30px;
+  padding-top: 15px;
+
+  border-bottom: 1px solid #000;
+  border-left: 1px solid #000;
+  border-right: 1px solid #000;
 }
+
 .second-rule__custom-text{
-  position: absolute;
-  bottom: 15px;
-  width: 1050px;
+  /* width: 1050px; */
   
   color: #5E5E5E;
   font-size: 20px;

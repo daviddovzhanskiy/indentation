@@ -10,6 +10,9 @@ html {
 }
 
 body {
+  min-height: 100vh;
+  min-width: 100vw;
+
   font-family: 'Roboto', sans-serif;
   background-color: #fff;
   color: #000;
@@ -42,11 +45,11 @@ ul, ol {
   margin: 0 auto;
 }
 
-section {
+.section {
   padding: 25px 0;
 }
 
-section:last-child {
+.section:last-child {
   padding-top: 25px;
   padding-bottom: 0;
 }

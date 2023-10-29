@@ -26,6 +26,10 @@
   line-height: 120%;
 }
 
+.first-rule__right-text:last-child {
+  margin-bottom: 0;
+}
+
 .first-rule__box-lower {
   display: flow-root;
 }
@@ -34,12 +38,19 @@
   float: right;
   width: 560px;
   height: 279px;
-  margin-left: 35px;
+}
+
+.first-rule__box-text {
+  width: 480px;
+  margin-right: 35px;
 }
 
 .first-rule__left-text {
   margin-bottom: 30px;
-  
   font-size: 20px;
   line-height: 120%;
+}
+
+.first-rule__left-text:last-child {
+  margin-bottom: 0;
 }
